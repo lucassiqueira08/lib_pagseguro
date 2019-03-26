@@ -1,1 +1,1 @@
-from LocaPy.pagseguro.app import Pagseguro
+from pagseguro.app import Pagseguro
