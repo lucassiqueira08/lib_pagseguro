@@ -15,6 +15,7 @@
   
 ### Passo a passo
 
+####  Efetuar Pagamento
 Para utilizar a API do Pagseguro é necessário realizar o checkout para autorização
 
 ```python
@@ -63,3 +64,22 @@ url = pagseguro.redirect(checkout)
 Por fim, basta redirecionar o usuário para a URL fornecida no passo acima para realizar o pagamento.
 
 __LEMBRE-SE:__ Não se esqueça de configurar a URL de redirecionamento na sua conta do pagseguro para ser redirecionado de volta a sua aplicação
+
+#### Cancelar Transação
+Para cancelar uma transação é necessário ter o número da transação realizada.
+Realize a autenticação:
+```python
+from pagseguro import Pagseguro
+auth = Pagseguro(email="lucas@gmail.com", token=seu_token_de_acesso)
+```
+
+Realize o cancelamento da transação executando:
+```python
+pagseguro.cancel_transaction(numero_da_transação)
+```
+
+#### Estornar Transação
+Para estornar uma transação é necessário ter o numero da transação. Depois de autenticado, execute:
+```python
+pagseguro.reverse_transaction(numero_da_transação, valor_a_ser_estornado)
+```
