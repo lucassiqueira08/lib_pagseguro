@@ -5,8 +5,6 @@
 #### Fluxo de Funcionamento da API Pagseguro
 ![fluxo de funcionamento api pagseguro](https://stc.pagseguro.uol.com.br/pagseguro/i/integracoes/pagamento_via_api.gif)
 
-![fluxo api pagseguro](https://files.readme.io/44c83b8-img_1.png)
-
 
 #### Pré-requisitos
 * Ter uma conta do pagseguro [aqui](https://pagseguro.uol.com.br/registration/registration.jhtml?rcr=a94ca841163f72d80fd722ed640bdee178a122d572976d3c4e900351a26b2d462dee1e3219f2241cd7d93487011c26a78d610f9f6dbf521c4bb5d617fd1bb0b2)
